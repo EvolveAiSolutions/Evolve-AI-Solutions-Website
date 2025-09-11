@@ -19,8 +19,8 @@ exports.handler = async function (event) {
     // Initialize the Google AI client with your API key.
     const genAI = new GoogleGenerativeAI(apiKey);
     
-    // THE FIX IS HERE: We are now using the correct, stable model name "gemini-pro".
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    // THE FINAL FIX: We are now using the stable, versioned model name "gemini-1.0-pro".
+    const model = genAI.getGenerativeModel({ model: "gemini-1.0-pro" });
 
     // This is the prompt we send to the AI.
     const prompt = `I run a small business.
@@ -50,3 +50,4 @@ Format the entire response as simple HTML with <p> and <strong> tags. Do not inc
     };
   }
 };
+
