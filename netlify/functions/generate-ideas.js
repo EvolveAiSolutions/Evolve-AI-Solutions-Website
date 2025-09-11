@@ -15,8 +15,8 @@ exports.handler = async function (event) {
     
     const genAI = new GoogleGenerativeAI(apiKey);
     
-    // THE FINAL FIX: Using the correct, modern, and universally available model.
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
+    // THE FINAL FIX: Using the stable, primary model name without the "-latest" tag.
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const prompt = `I run a small business.
 My business type is: "${businessType}".
@@ -43,4 +43,3 @@ Format the entire response as simple HTML with <p> and <strong> tags.`;
     };
   }
 };
-
