@@ -1,0 +1,14 @@
+{
+  "name": "evolve-ai-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "netlify-lambda build netlify/functions"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.1.3"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^2.0.16"
+  }
+}
+
