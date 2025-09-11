@@ -1,12 +1,6 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-// This is a version number for our diagnostic test.
-const SCRIPT_VERSION = "v4_DIAGNOSTIC";
-
 exports.handler = async function (event) {
-  // This will print the version number to the Netlify log.
-  console.log(`Executing generate-ideas function. Version: ${SCRIPT_VERSION}`);
-
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
@@ -21,8 +15,8 @@ exports.handler = async function (event) {
     
     const genAI = new GoogleGenerativeAI(apiKey);
     
-    // Final attempt with the base model name.
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    // THE FINAL FIX: Using the correct, modern, and universally available model.
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 
     const prompt = `I run a small business.
 My business type is: "${businessType}".
