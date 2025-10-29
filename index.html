@@ -8,6 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL2T4QD2MF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-EL2T4QD2MF');
+    </script>
+    
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -38,21 +49,13 @@
             100% { transform: rotate(360deg); }
         }
     </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL2T4QD2MF"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-EL2T4QD2MF');
-    </script>
 </head>
 <body>
 
     <header id="header" class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300">
         <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
             <a href="#">
+                <!-- IMAGE FIX: Pointing to local images folder -->
                 <img src="images/logo.png" alt="Evolve AI Solutions Logo" class="h-20 w-auto">
             </a>
             <button id="mobile-menu-button" class="md:hidden text-white">
@@ -80,8 +83,8 @@
     <main>
         <section id="hero" class="pt-8 pb-20 md:pt-12 md:pb-32">
             <div class="container mx-auto px-6 text-center">
-                <!-- HERO IMAGE FIX: Replaced background with foreground image -->
-                <img src="images/hero-logo.png" alt="Evolve AI Solutions" class="h-64 md:h-96 w-auto mx-auto mb-12">
+                <!-- IMAGE FIX: Pointing to local images/hero-logo.png -->
+                <img src="images/hero-logo.png" alt="Evolve AI Solutions Logo" class="h-64 md:h-96 w-auto mx-auto mb-12">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
                     <span class="hero-gradient-text">Evolve Your Business</span> with AI.
                 </h1>
@@ -89,7 +92,7 @@
                     Friendly, practical solutions to keep you ahead.
                 </p>
                 <div class="mt-8">
-                    <a href="https://calendar.app.google/STUr55YVQT7A2VpT7" target="_blank" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform hover:scale-105 inline-block">
+                    <a href="https://calendar.app.google/STUr55YVQT7A2VpT7" target="_blank" rel="noopener noreferrer" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform hover:scale-105 inline-block">
                         Book Your Free AI Chat
                     </a>
                     <p class="mt-2 text-sm text-slate-400">A no-pressure, 20-minute discovery call</p>
@@ -97,7 +100,25 @@
             </div>
         </section>
         
-        <section id="ai-generator" class="py-20 bg-slate-900">
+        <!-- === NEW LEAD MAGNET SECTION === -->
+        <section id="lead-magnet" class="py-20 bg-slate-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
+                    Get Your <span class="text-cyan-400">FREE</span> "5-Minute AI Marketing Plan"
+                </h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-300">
+                    Download our free 10-page guide with 5 simple, copy-and-paste prompts to help you attract customers and save time today. This is the perfect first step to making AI work for you.
+                </p>
+                <div class="mt-8">
+                    <a href="https://payhip.com/b/lqpH7" target="_blank" rel="noopener noreferrer" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform hover:scale-105 inline-block shadow-lg">
+                        Download Your Free Guide Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- === END LEAD MAGNET SECTION === -->
+        
+        <section id="ai-generator" class="py-20"> <!-- Removed bg-slate-900 to alternate colors -->
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold section-title mb-2">Get Instant AI Ideas</h2>
                 <p class="mb-8 max-w-2xl mx-auto text-slate-400">Not sure where to start? Enter your business type and biggest challenge below to get three practical AI-powered solutions generated for you.</p>
@@ -126,6 +147,7 @@
             <div class="container mx-auto px-6">
                 <div class="grid md:grid-cols-5 gap-12 items-center">
                     <div class="md:col-span-2">
+                        <!-- IMAGE FIX: Pointing to local images folder -->
                         <img src="images/ryan-pinder.jpg" alt="A photo of Ryan Pinder, founder of Evolve AI Solutions" class="rounded-lg shadow-2xl mx-auto">
                     </div>
                     <div class="md:col-span-3">
@@ -177,13 +199,13 @@
                         <h3 class="text-2xl font-bold text-cyan-400 mb-2">AI Accelerator Session</h3>
                         <p class="text-slate-400 mb-6 flex-grow">Our core offering, combining a live session with a full strategy report.</p>
                         <p class="text-4xl font-extrabold text-white mb-6">£299</p>
-                        <a href="https://calendar.app.google/yUKcrTnQgnx6PWcR6" target="_blank" class="mt-auto w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">Book a Session</a>
+                        <a href="https://calendar.app.google/yUKcrTnQgnx6PWcR6" target="_blank" rel="noopener noreferrer" class="mt-auto w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">Book a Session</a>
                     </div>
                     <div class="bg-slate-800 p-8 rounded-lg shadow-lg border border-slate-700 flex flex-col">
                         <h3 class="text-2xl font-bold text-white mb-2">AI Deep Dive & Training</h3>
                         <p class="text-slate-400 mb-6 flex-grow">The complete package, including the strategy session plus hands-on, personalised training.</p>
                         <p class="text-4xl font-extrabold text-white mb-6">£479</p>
-                        <a href="https://calendar.app.google/4obKbrnZy4h81fVt6" target="_blank" class="mt-auto w-full bg-slate-600 hover:bg-slate-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">Book a Session</a>
+                        <a href="https://calendar.app.google/4obKbrnZy4h81fVt6" target="_blank" rel="noopener noreferrer" class="mt-auto w-full bg-slate-600 hover:bg-slate-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">Book a Session</a>
                     </div>
                 </div>
                 <h3 class="text-2xl font-bold section-title mb-6">Full Feature Comparison</h3>
@@ -247,19 +269,23 @@
                 <div class="grid md:grid-cols-2 gap-8 text-left">
                     <div class="bg-slate-800 p-8 rounded-lg shadow-lg flex flex-col justify-between">
                         <div>
-                           <img src="images/prompt-pack-icon.png" class="w-16 h-16 mb-4" alt="Prompt Pack Icon">
+                           <!-- IMAGE FIX: Pointing to local images folder -->
+                           <img src="images/prompt-pack-icon.png" alt="Icon for Small Business Prompt Pack" class="w-24 h-24 mb-6">
                            <h3 class="text-2xl font-bold text-cyan-400 mb-4">The Small Business Prompt Pack</h3>
                            <p class="text-slate-300 mb-6">Our curated PDF guide with over 50 copy-and-paste prompts, designed to help you conquer marketing, social media, emails, and more.</p>
                         </div>
-                        <a href="https://payhip.com/b/sO6E9" target="_blank" class="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg transition-colors text-center">Buy Now for £19</a>
+                        <!-- PRICE & LINK UPDATE -->
+                        <a href="https://payhip.com/b/sO6E9" target="_blank" rel="noopener noreferrer" class="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg transition-colors text-center">Buy Now for £19</a>
                     </div>
                     <div class="bg-slate-800 p-8 rounded-lg shadow-lg flex flex-col justify-between">
                         <div>
-                            <img src="images/toolkit-icon.png" class="w-16 h-16 mb-4" alt="Toolkit Icon">
+                            <!-- IMAGE FIX: Pointing to local images folder -->
+                            <img src="images/toolkit-icon.png" alt="Icon for Educator's AI Toolkit" class="w-24 h-24 mb-6">
                             <h3 class="text-2xl font-bold text-cyan-400 mb-4">The Educator's AI Toolkit</h3>
                             <p class="text-slate-300 mb-6">A comprehensive cheat sheet for teachers, packed with powerful prompt formulas for lesson planning and report writing.</p>
                         </div>
-                        <a href="https://payhip.com/b/pnLGS" target="_blank" class="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg transition-colors text-center">Buy Now for £19</a>
+                        <!-- PRICE & LINK UPDATE -->
+                        <a href="https://payhip.com/b/pnLGS" target="_blank" rel="noopener noreferrer" class="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg transition-colors text-center">Buy Now for £19</a>
                     </div>
                 </div>
             </div>
@@ -272,7 +298,7 @@
                      <div class="bg-slate-800 p-8 rounded-lg shadow-lg text-slate-400 italic">
                          <p>"This section is waiting for fantastic feedback from our first clients. Be the first to be featured!"</p>
                          <p class="mt-4 font-bold text-slate-300 not-italic">- A Future Happy Client</p>
-                    </div>
+                     </div>
                 </div>
             </div>
         </section>
@@ -285,7 +311,7 @@
                     <a href="mailto:ryan@evolve-ai-solutions.co.uk?subject=Website%20Enquiry" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform hover:scale-105 inline-block">
                         Email Me
                     </a>
-                    <a href="https://www.linkedin.com/in/ryan-pinder-90ab86369/" target="_blank" class="text-cyan-400 hover:text-cyan-300 font-semibold text-lg">
+                    <a href="https://www.linkedin.com/in/ryan-pinder-90ab86369/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 font-semibold text-lg">
                         Connect on LinkedIn
                     </a>
                  </div>
@@ -296,21 +322,21 @@
     <footer class="bg-slate-900">
         <div class="container mx-auto px-6 py-8 text-center text-slate-400">
             <div class="mb-4 flex justify-center space-x-6">
-                <a href="https://www.linkedin.com/in/ryan-pinder-90ab86369/" target="_blank" aria-label="LinkedIn" class="hover:text-cyan-400 transition-colors">
+                <a href="https://www.linkedin.com/in/ryan-pinder-90ab86369/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-cyan-400 transition-colors">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/evolve.ai.solutions/" target="_blank" aria-label="Instagram" class="hover:text-cyan-400 transition-colors">
+                <a href="https://www.instagram.com/evolve.ai.solutions/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-cyan-400 transition-colors">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"></path>
+                       <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.221 6.412a.624.624 0 00-.884 0l-3.333 3.333-1.473-1.473a.624.624 0 10-.884.884l1.916 1.916a.624.624 0 00.884 0l3.777-3.777a.624.624 0 000-.883z" clip-rule="evenodd" /><path d="M16.5 6.25a.75.75 0 00-1.5 0v.5a.75.75 0 001.5 0v-.5z" /><path d="M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zM8.25 12a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0z" />
                     </svg>
                 </a>
-                 <a href="https://www.facebook.com/share/1CAZ8NjLXm/" target="_blank" aria-label="Facebook" class="hover:text-cyan-400 transition-colors">
-                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                         <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
-                    </svg>
-                </a>
+                 <a href="https://www.facebook.com/share/1CAZ8NjLXm/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-cyan-400 transition-colors">
+                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                     </svg>
+                 </a>
             </div>
             <div class="mt-4 mb-4 space-x-6 text-sm">
                 <a href="privacy-policy.html" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
@@ -321,25 +347,28 @@
     </footer>
 
     <script>
+        // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
+        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 if (!mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.add('hidden');
                 }
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const targetEl = document.querySelector(this.getAttribute('href'));
+                if (targetEl) {
+                    targetEl.scrollIntoView({ behavior: 'smooth' });
+                }
             });
         });
 
+        // Header shadow on scroll
         const header = document.getElementById('header');
         window.onscroll = function() {
             if (window.pageYOffset > 50) {
@@ -348,8 +377,8 @@
                 header.classList.remove("shadow-lg");
             }
         };
-        
-        // SECURE AI GENERATOR SCRIPT
+
+        // === AI Idea Generator Logic ===
         const generateBtn = document.getElementById('generate-ideas-btn');
         const outputDiv = document.getElementById('idea-generator-output');
         const loadingSpinner = document.getElementById('loading-spinner');
@@ -371,23 +400,27 @@
             generateBtn.classList.add('opacity-50', 'cursor-not-allowed');
 
             try {
+                // Point to our secure Netlify function
                 const response = await fetch('/.netlify/functions/generate-ideas', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ businessType, businessChallenge })
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ businessType, businessChallenge }),
                 });
 
                 if (!response.ok) {
                     const errorData = await response.json();
-                    throw new Error(errorData.error || 'Something went wrong on our end. Please try again.');
+                    throw new Error(errorData.error || 'Something went wrong on the server.');
                 }
-                
-                const data = await response.json();
-                outputDiv.innerHTML = data.ideas;
+
+                const result = await response.json();
+                outputDiv.innerHTML = result.ideas.replace(/\n/g, '<br>');
 
             } catch (error) {
                 console.error("Error calling Netlify function:", error);
-                outputDiv.innerHTML = `<p class="text-red-400">Sorry, something went wrong while generating ideas. Please try again later.</p><p class="text-red-500 text-sm mt-2">Error: ${error.message}</p>`;
+                // Display a more detailed error message to the user
+                outputDiv.innerHTML = `<p class="text-red-400">Sorry, something went wrong while generating ideas. Please try again later.<br>Error: ${error.message}</p>`;
             } finally {
                 loadingSpinner.classList.add('hidden');
                 generateBtn.disabled = false;
